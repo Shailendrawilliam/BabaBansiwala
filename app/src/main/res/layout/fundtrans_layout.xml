@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fund_transfer"
+        android:gravity="center"
+        android:padding="@dimen/_3sdp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:fontFamily="serif"
+        android:textSize="22sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/ret_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="10dp"
+        android:fontFamily="serif"
+        android:text=""
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20sp"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="10dp"
+        android:fontFamily="serif"
+        android:text="@string/fund_type"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/radioview"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp">
+
+        <RadioButton
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+             android:paddingLeft="10dip"
+            android:text="@string/prepaid"
+            android:fontFamily="serif"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:id="@+id/prepaid"
+            android:checked="true"/>
+
+        <RadioButton
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+             android:paddingLeft="10dip"
+            android:text="@string/utility"
+            android:fontFamily="serif"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:id="@+id/utility"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/message"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="serif"
+        android:padding="@dimen/_10sdp"
+         android:hint="@string/amount_hint"
+        android:background="@drawable/bgediteext"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/okButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/downlineMobileNumber"
+            android:layout_marginTop="20dp"
+            android:background="@color/green"
+            android:textColor="@color/white"
+            android:fontFamily="serif"
+            android:text="@string/dialog_ok" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:fontFamily="serif"
+            android:background="@color/red"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp" android:textAllCaps="false"
+            android:text="Cancel" />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,294 @@
+<resources>
+    <string name="app_name">Baba bansiwala</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_downline_bal">Downline balance check</string>
+    <string name="action_dmrreport_search">DMR Report Filter</string>
+    <string name="dialog_ok">Ok</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="search_menu_label">Search</string>
+    <string name="cancel_menu_label">Cancel</string>
+    //////////////////////////////////////
+    <string name="network_error_title">Network Error!</string>
+    <string name="network_error_message">Please check your network connection and try again.</string>
+    <string name="attention_error_title">Attention!</string>
+    <string name="successful_title">Successful!</string>
+    <string name="dthreport">Recharge Offer </string>
+    <string name="userSaleew">User Sales Report </string>
+    <string name="password_error">Please enter valid password</string>
+    <string name="mobilenumber_error">Enter Valid Mobile Number</string>
+    <string name="number_error">Enter Valid Number</string>
+    <string name="transactionId_error">Enter valid transaction ID</string>
+    <string name="amount_error">Please enter recharge amount</string>
+    <string name="amount_transfer_error">Please enter amount</string>
+    <string name="transfer_type_error">Please select payment system</string>
+    <string name="bank_error">Please select bank</string>
+    <string name="operator_error">Please select operator</string>
+    <string name="previouspass_error">Incorrect current password!</string>
+    <string name="newpass_error">New password not matched!</string>
+    <string name="pinpass_error">Pin password not matched!</string>
+    <string name="transaction_empty_message">No transaction history found!</string>
+    <string name="empty_list_message">No data history found!</string>
+    <string name="login_error_title">Error!</string>
+
+    <string name="name_digits">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 0123456789</string>
+
+    <string name="name_error">Enter name</string>
+    <string name="bene_name_error">Enter beneficiary name</string>
+    <string name="bene_bank_error">Please select bank name</string>
+    <string name="bene_acc_error">Please enter valid account number</string>
+    <string name="bene_ifsc_error">Please enter valid ifsc number</string>
+    <string name="pincode_error">Enter valid pincode</string>
+
+    <string name="rupiya">\u20B9</string>
+    <string name="cancel">\u274C</string>
+    <string name="delete">\u2718</string>
+
+
+    <string name="str_Note">Note: Always make sure your Account Number \u0026 IFSC Code is correct. Company will not be liable for any wrong transactions.</string>
+    <string name="str_ShowOnPermisstion">Please Allow some permission for your app. If you deny permissions will not be able to use functionality of this app.</string>
+    <string name="update_operator">Update App</string>
+    <string name="action_showpopup">Show Popup</string>
+    <string name="err_msg_network">No Internet Connection</string>
+    <string name="err_msg_network_title">No Internet Connection</string>
+    <string name="email_error">Enter Valid  Email Address</string>
+    <string name="address_error">Enter Valid Address</string>
+    <string name="city_error">Enter Valid City</string>
+    <string name="state_error">Enter Valid State</string>
+    <string name="empty_gift_message_error">GiftCard Message Can\'t be Empty.</string>
+    <string name="failed">Failed</string>
+    <string name="remark_error">Please Enter Remark</string>
+    <string name="AmountInWords_error">Enter Amount In words</string>
+    <string name="dth_warning">Please Inform Customer to switch on\nTV and Set Top Box before Recharge</string>
+    <string name="address"> Hyderabad. </string>
+    <string name="action_lang">EN</string>
+    <string name="password_hint">Enter Password</string>
+    <string name="submit">Submit</string>
+    <string name="balance">Balance</string>
+    <string name="utility">Utility</string>
+    <string name="user_sale_report">User Sales Report</string>
+    <string name="show_more">Show More</string>
+    <string name="today">Today</string>
+    <string name="month">Month</string>
+    <string name="last_month">Last Month</string>
+    <string name="remaining">Remaining</string>
+    <string name="target_remining">Target Remaining</string>
+    <string name="reports_title">Reports</string>
+    <string name="recharge_report_title"> Recharge Report </string>
+    <string name="search_complain"> Search Complain </string>
+    <string name="complain_report"> Complain Report </string>
+    <string name="ledger_report"> Ledger Report </string>
+    <string name="fund_recieve_report"> Fund Rec  Report </string>
+    <string name="fund_transfer_report"> Fund Trans Report </string>
+    <string name="sales_coupon"> Sales\nCoupons </string>
+    <string name="offer_sheet">Offer\nSheet</string>
+    <string name="recharge_offer">Recharge\nOffer</string>
+    <string name="user_day_book"> User Day-Book </string>
+    <string name="comm_slab"> Commission Slab </string>
+    <string name="user_sale_report_datewise"> DateWise\nSalesReport  </string>
+    <string name="date_wise_all_sale_report"> DateWise\nAllSalesReport </string>
+    <string name="datewise_fund_transfer"> DateWise \nFundRecStmt </string>
+    <string name="recharge_title">  Recharge </string>
+    <string name="prepaid">Prepaid</string>
+    <string name="dth">DTH</string>
+    <string name="user_sale_report_details">User Sales \nReport Details</string>
+    <string name="bene_list">Beneficiary \n List</string>
+    <string name="dth_booking">DTH Booking</string>
+    <string name="bill_payment">Bill Payments</string>
+    <string name="postpaid">Postpaid</string>
+    <string name="electricity">Electricity</string>
+    <string name="bradband">Broadband</string>
+    <string name="water">Water</string>
+    <string name="landline">Landline</string>
+    <string name="gas">Gas</string>
+    <string name="isurance">Insurance</string>
+    <string name="gift_card">Gift Card</string>
+    <string name="add_money">Add Money</string>
+    <string name="other">Other</string>
+    <string name="payment_request">Payment Request</string>
+    <string name="bbps_reg">BBPS Outlet\nRegistration</string>
+    <string name="fund_transfer">FundTransfer</string>
+    <string name="profile">Profile</string>
+    <string name="support">Support</string>
+    <string name="logout">Logout</string>
+    <string name="sender_detaiils">Sender Details</string>
+    <string name="sender_name">SenderName</string>
+    <string name="sender_email">Sender Email</string>
+    <string name="enter_mobile_hint">Mobile Number</string>
+    <string name="enter_add_hint">Address</string>
+    <string name="pincode_hint">Pincode</string>
+    <string name="amount_hint">Amount</string>
+    <string name="city_hint">City</string>
+    <string name="state_hint">State</string>
+    <string name="reciever_details">Receiver Details</string>
+    <string name="reciever_name">ReceiverName</string>
+    <string name="reciever_email">Receiver Email</string>
+    <string name="reciever_mobile">Receiver Mobile Number</string>
+    <string name="reciever_add">Receiver Address</string>
+    <string name="gift_card_message">GiftCard Message</string>
+    <string name="no_data">No data available !!</string>
+    <string name="search_history">Search History by Date</string>
+    <string name="otp_message_sent">Otp send on Login Mobile  Number</string>
+    <string name="outlet_name">Outlet Name</string>
+    <string name="name">Outlet Name</string>
+    <string name="dob">DOB</string>
+    <string name="email_hint">Enter Email</string>
+    <string name="sender_mobile">Sender Mobile</string>
+    <string name="area_hint">Area</string>
+    <string name="pan_hint">Pan Number</string>
+    <string name="aadhar_hint">Aadhar Number</string>
+    <string name="adhar_link">Aadhar link</string>
+    <string name="pan_link">Pan link</string>
+    <string name="otp">OTP</string>
+    <string name="get_otp">Get OTP</string>
+    <string name="wallet">Wallet Type :</string>
+    <string name="payment_mode">Payment Mode :</string>
+    <string name="bank_title">Bank :</string>
+    <string name="select_bank">Select Bank</string>
+    <string name="account_no">Account No :</string>
+    <string name="transaction_id">Transaction ID :</string>
+    <string name="amount_hint_in_words">Amount In Words:</string>
+    <string name="remark_hint">Remark :</string>
+    <string name="upload_image">Upload File</string>
+    <string name="fund_type">Select Fund Type :</string>
+    <string name="operator_title">Operator</string>
+    <string name="std_code">Std Code</string>
+    <string name="number_hint">Recharge No</string>
+    <string name="number">Number</string>
+    <string name="confirm_number">Confirm Number</string>
+    <string name="view_info">View Info</string>
+    <string name="confirm_amount">Confirm Amount</string>
+    <string name="roffer">R OFFER</string>
+    <string name="clear">CLEAR</string>
+    <string name="recent_recharge">Recent Recharges</string>
+    <string name="distributors"> Distributors </string>
+    <string name="ret"> Retailers </string>
+    <string name="api_user"> ApiUsers </string>
+    <string name="md"> MDistributor </string>
+    <string name="sa"> SubAdmin </string>
+    <string name="name_hint">Enter name</string>
+    <string name="broadband_info">Broadband Bill Info</string>
+    <string name="_cast_name">Customer Name :</string>
+    <string name="due_amount">Due Amount</string>
+    <string name="due_date">Due Date</string>
+    <string name="bill_numer">Bill Number</string>
+    <string name="bill_date">Bill Date</string>
+    <string name="bill_amount">Bill Amount :</string>
+    <string name="new_amt">New Amount :</string>
+    <string name="current_pass">Current Password</string>
+    <string name="new_pass">New password</string>
+    <string name="confirm_pass">Confirm password</string>
+    <string name="rec_comm">Rec. Commission :</string>
+    <string name="comfirmation">Confirmation !</string>
+    <string name="package_amt">Package Amount</string>
+    <string name="next_recharge_date">Next Recharge Date</string>
+    <string name="plan_name">Plan Name</string>
+    <string name="cust_name">Customer name</string>
+    <string name="cust_info">Customer Info</string>
+    <string name="cust_number">Customer Number</string>
+    <string name="cust_add">Customer Add :</string>
+    <string name="ero">Ero :</string>
+    <string name="old_amt">Old Amount :</string>
+    <string name="from">From</string>
+    <string name="to">To :</string>
+    <string name="total_trans">Trans Amt :</string>
+    <string name="service_provider">SERVICE  PROVIDER</string>
+    <string name="recharge_warn">Recharge Reversal not Available, please check Customer Number and amount Before Recharge</string>
+    <string name="recharge_number">Recharge Number</string>
+    <string name="status">Status :</string>
+    <string name="credit">Credit :</string>
+    <string name="remember">Remember password</string>
+    <string name="login_title">Login</string>
+    <string name="or">OR</string>
+    <string name="reg">Register account</string>
+    <string name="forgot_pass">Forgot Password</string>
+    <string name="help_line">Helpline Number -8520965901</string>
+    <string name="news">news</string>
+    <string name="otp_verify">OTP Verification !</string>
+    <string name="otp_warn">Please enter valid OTP code sent on your mobile.</string>
+    <string name="pass_verify">Password Verification !</string>
+    <string name="pin_hint">Enter New Pin</string>
+    <string name="pin_verify">Pin Password Verification !</string>
+    <string name="pinpass_hint">Please enter pin-password code.</string>
+    <string name="amount_title">Amount</string>
+    <string name="action_downline">View Downline</string>
+    <string name="summury">Summary</string>
+    <string name="from_date">Please select from date.</string>
+    <string name="create_user">Create\nUser</string>
+    <string name="change_pass">Change\nPassword</string>
+    <string name="change_pin">Change\nPin</string>
+    <string name="pin_pass">Pin-Password Secure</string>
+    <string name="email_title">Email</string>
+    <string name="title_mobile">mobile</string>
+    <string name="repeat">Repeat</string>
+    <string name="dispute"> dispute </string>
+    <string name="refund_status">Refund Status :</string>
+    <string name="target_sales">Target Sales :</string>
+    <string name="remaining_sales_target">Remaining Sales Target:</string>
+    <string name="total_hit">Total Hit</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="success_hit">Success Hit</string>
+    <string name="success_amont">Success Amt.</string>
+    <string name="failed_hit">Failed Hit</string>
+    <string name="failed_amount">Failed Amt.</string>
+    <string name="pending_hit">Pending Hit</string>
+    <string name="pending_amt">Pending Amt.</string>
+    <string name="fund_recieve_report_title">Fund Receive Report</string>
+    <string name="reply">Reply</string>
+    <string name="support_email">Support Email :</string>
+    <string name="cust_care_no">Helpline Number :</string>
+    <string name="generate_token">Generate Ticket</string>
+    <string name="open_ticket">Open Tickets</string>
+    <string name="close_ticket">Close Tickets</string>
+    <string name="rep_datewise">Reports Datewise</string>
+    <string name="coupon_string">Sales and Coupons</string>
+    <string name="operator_title_id">operator Id</string>
+    <string name="complain"> Complain </string>
+    <string name="some_thing_error">Some thing error please try after some time</string>
+    <string name="invalid_pin">Error</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="razorpaykey">rzp_live_XTZ3KBof0DJDvm</string>
+    <string name="live_razor_pay_secret_key">7dpn06Q9S7YWhuDPcTumWH4E</string>
+    <string name="line"> \u20b9 290 for 2Kg.  <strike> \u20b9 294 for 2Kg.  </strike> </string>
+    <string-array name="mobile_array">
+        <item>+91</item>
+        <item>+11</item>
+    </string-array>
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="direction_array">
+        <item>Left</item>
+        <item>Right</item>
+    </string-array>
+
+    <string-array name="operator">
+        <item>
+Jio</item>
+        <item>Airtel</item>
+        <item>Vi</item>
+        <item>BSNL Mobile</item>
+    </string-array>
+
+    <string name="l8">	OR</string>
+    <string name="l9">	If the company asks for confrimation of payment</string>
+    <string name="l7">	If Your Mobile No is not entered in Bank Remarks</string>
+    <string name="enter_user_id"><font size="17">Enter Mobile</font></string>
+    <string name="enter_password"><font size="17">Enter Password</font></string>
+    <string name="title_activity_transfer_wallet">TransferWallet</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="mantra">Mantra</string>
+
+</resources>

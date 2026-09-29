@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/createTicket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/generate_token"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/dividerCreate"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/createTicket"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/openReversal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dividerCreate"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/open_ticket"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/openReversal"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/closeReversal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/close_ticket"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+</RelativeLayout>

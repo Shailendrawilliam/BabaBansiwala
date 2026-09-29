@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="?actionBarSize">
+
+        <ImageView
+            android:id="@+id/ivback"
+            android:layout_width="@dimen/_30sdp"
+
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/ic_arrow_back" />
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Add Beneficiary"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@+id/ivback"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginTop="?actionBarSize"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/senderLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="Sender mobile number"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/senderNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/senderLabel"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/black">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1px"
+                        android:background="@color/white">
+
+                        <EditText
+                            android:id="@+id/beneficiaryName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:hint="Beneficiary name"
+                            android:singleLine="true"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/beneficiaryNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/beneficiaryName"
+                            android:digits="0123456789"
+                            android:gravity="start"
+                            android:hint="Beneficiary number"
+                            android:inputType="number"
+
+                            android:singleLine="true"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/bank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/container"
+            android:drawableRight="@drawable/ic_arrow_drop_down_icon"
+            android:focusable="false"
+            android:hint="Select Bank"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/accVerify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bank"
+            android:layout_alignTop="@+id/accountNumber"
+            android:layout_alignBottom="@+id/accountNumber"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:maxLength="15"
+            android:padding="5dp"
+            android:text="Verify"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ifscLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/accountNumber"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <EditText
+                android:id="@+id/ifscCode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/bank"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="3"
+                android:background="@color/grey_600"
+                android:focusable="false"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/ifsc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bank"
+                android:layout_weight="1"
+                android:hint="IFSC"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/addressLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ifscLayout"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                android:hint="Enter Beneficiary Address"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/pincodeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addressLayout"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+
+            <EditText
+                android:id="@+id/pincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:layout_weight="1"
+android:maxLength="6"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:hint="Enter Pincode"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pincodeLayout"
+            android:padding="5dp"
+            android:text="@string/str_Note"
+            android:textColor="@color/grey_600"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/accountNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bank"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/accVerify"
+            android:hint="Account number"
+            android:inputType="number"
+
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/create"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_alignBottom="@+id/ifscLayout"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Create"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>

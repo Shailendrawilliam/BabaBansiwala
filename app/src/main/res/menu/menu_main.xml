@@ -1,0 +1,71 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+   >
+
+    <item
+        android:id="@+id/action_showpopup"
+        android:visible="false"
+        android:title="Popup"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_notice"
+         android:title="" android:visible="false"
+        android:icon="@drawable/ic_baseline_chat_24"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_lang"
+        android:orderInCategory="100" android:visible="false"
+        android:title="@string/action_lang"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_downline_balance"
+        android:orderInCategory="100"   android:visible="false"
+        android:title="@string/action_downline_bal"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_payment_req"
+        android:orderInCategory="100"  android:visible="false"
+        android:title="@string/payment_request"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_update_operator"
+        android:orderInCategory="100"
+        android:title="@string/update_operator"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_refresh"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_baseline_refresh_24"
+        android:iconTint="@color/white"
+        android:title=""
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="100"
+        android:visible="true"
+         android:iconTint="@color/white"
+        android:icon="@drawable/ic_logout_icon_white"
+        app:showAsAction="never"
+        android:title="Logout" />
+    <item
+        android:id="@+id/action_support"
+        android:orderInCategory="100"
+        android:title="support"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_privacy_policy"
+        android:orderInCategory="100"
+        android:title="Privacy Policy"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/action_refund_policy"
+        android:orderInCategory="100"
+        android:title="Refund Policy"
+        app:showAsAction="never" />
+</menu>

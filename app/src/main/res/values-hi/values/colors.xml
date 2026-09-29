@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#24B369</color>
+    <color name="colorPrimaryDark">#48AF57</color>
+    <color name="colorAccent">#2196F3</color>
+
+    <color name="iconColor">#48AF57</color>
+
+    <color name="buttoncolor">#48AF57</color>
+    <color name="button_color">#48AF57</color>
+    <color name="colorBackground">#A9A9A9</color>
+
+    <color name="bottommenu">#7e7e7e</color>
+
+    <color name="green">#48AF57</color>
+    <color name="red">#FF0000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="colorlink">#0645AD</color>
+    <color name="yellow">#ffff00</color>
+
+    <!-- <color name="fab_color_pressed">#0eb795</color>
+     <color name="fab_color_shadow">#44000000</color>
+     <color name="text_like_counter">#0eb795</color>-->
+
+
+    <color name="icon_color">#c9c6c3</color>
+    <color name="textcolor">#2B7BA8</color>
+    <color name="text_color">#2B7BA8</color>
+    <color name="devider_color">#cebcbc</color>
+    <color name="hint_color">#84000000</color>
+    <color name="shadow">#44000000</color>
+    <color name="pressed">#9E570F</color>
+    <!--main colour-->
+    <color name="back_bg">#e1dede</color>
+    <color name="back_bgg">#fafafa</color>
+    <color name="transparent">#88a98c8c</color>
+    <color name="aboutpagecolour">#DDDDFA</color>
+
+    <color name="purple">#1f2d20</color>
+
+    <color name="grey">#665f5f</color>
+    <color name="greycon">#383636</color>
+    <color name="light_grey">#a19f9f</color>
+
+
+    <color name="reddishBrown">#B93221</color>
+
+    <color name="gre">#2a692d</color>
+
+    <!--swipelist.. color-->
+
+    <color name="color_primary">#D64208</color>
+    <color name="color_primary_dark">#d32f2f</color>
+    <color name="color_accent">#f44336</color>
+
+    <color name="color_delete">#ff5722</color>
+    <color name="color_mark">#1B6EA5</color>
+
+    <!-- Randomized colors -->
+    <color name="color_red">#DB1D0F</color>
+    <color name="color_pink">#D534A7</color>
+    <color name="color_purple">#8615B6</color>
+    <color name="color_deep_purple">#581CC2</color>
+    <color name="color_indigo">#2A46DF</color>
+    <color name="color_blue">#2090C4</color>
+    <color name="color_light_blue">#03a9f4</color>
+    <color name="color_cyan">#00bcd4</color>
+    <color name="color_teal">#009688</color>
+    <color name="color_green">#4caf50</color>
+    <color name="color_light_green">#8bc34a</color>
+    <color name="color_lime">#cddc39</color>
+    <color name="color_yellow">#EED604</color>
+    <color name="color_amber">#ffc107</color>
+    <color name="color_orange">#FA5803</color>
+    <color name="color_deep_orange">#ff5722</color>
+    <color name="light_orange">#ff5722</color>
+    <color name="color_brown">#795548</color>
+    <color name="color_grey">#9e9e9e</color>
+    <color name="gray_btn_bg_color">#9e9e9e</color>
+    <color name="color_blue_grey">#607d8b</color>
+    //new Design
+    <color name="color_login_background">#e5e5e5</color>
+    <color name="dark_pink">#E41155</color>
+    <color name="dark_blue">#6A00FF</color>
+    <color name="back_bg_21">#e1dede</color>
+</resources>

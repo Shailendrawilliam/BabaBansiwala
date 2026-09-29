@@ -1,0 +1,70 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.roundpay.b2b.MainActivity">
+
+    <item
+        android:id="@+id/action_showpopup"
+        android:orderInCategory="100"
+        android:title="Popup" android:visible="false"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_notice"
+        android:orderInCategory="100"
+        android:title="" android:visible="false"
+        android:icon="@drawable/ic_baseline_chat_24"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_payment_req"
+        android:orderInCategory="100"
+        android:title="@string/payment_request"  android:visible="false"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_lang"
+        android:orderInCategory="100" android:visible="false"
+        android:title="@string/action_lang"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_downline_balance"
+        android:orderInCategory="100"
+        android:title="@string/action_downline_bal"
+        android:visible="false"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_update_operator"
+        android:orderInCategory="100"
+        android:title="@string/update_operator"
+        android:visible="true"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_refresh"
+        android:icon="@drawable/ic_refreshed_icon"
+        android:orderInCategory="100"
+        android:title="@string/action_refresh"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_support"
+        android:orderInCategory="100"
+        android:title="support"
+        app:showAsAction="never" />
+
+
+
+
+    <item
+        android:id="@+id/action_privacy_policy"
+        android:orderInCategory="100"
+        android:title="Privacy Policy"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_refund_policy"
+        android:orderInCategory="100"
+        android:title="Refund Policy"
+        app:showAsAction="never" />
+
+</menu>

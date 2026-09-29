@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0px">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="5dp"
+                android:elevation="6dp"
+                card_view:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/rechargeNoLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/amount"
+                        android:gravity="left"
+                        android:text="@string/number_hint"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/recharge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rechargeNoLabel"
+                        android:layout_toLeftOf="@+id/amount"
+                        android:gravity="left"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/amount"
+                        android:layout_alignTop="@+id/amount"
+                        android:layout_toLeftOf="@+id/amount">
+
+                        <ImageView
+                            android:id="@+id/rupeeImage"
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:scaleType="fitXY" />
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="left"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/recharge"
+                        android:layout_marginTop="5dp"
+                        android:gravity="left"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/date"
+                        android:layout_marginTop="10dp">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/operatorImage"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/message"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/operatorImage"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toLeftOf="@+id/statusImgLayout"
+                            android:layout_toRightOf="@+id/operatorImage"
+                            android:gravity="left"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <RelativeLayout
+                            android:id="@+id/statusImgLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/operatorImage"
+                            android:layout_alignBottom="@+id/operatorImage"
+                            android:layout_alignParentRight="true">
+
+                            <ImageView
+                                android:id="@+id/statusImg"
+                                android:layout_width="42dp"
+                                android:layout_height="42dp"
+                                android:layout_centerVertical="true" />
+                        </RelativeLayout>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/statusLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/message"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/operatorImage"
+                            android:gravity="left"
+                            android:text="@string/status"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/message"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/statusLabel"
+                            android:gravity="left"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <RelativeLayout
+                            android:id="@+id/operator_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/status"
+                            android:layout_toRightOf="@+id/operatorImage"
+                            android:visibility="visible">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/operatorLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="left"
+                                android:text="@string/operator_title_id"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/operatorId"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@+id/operatorLabel"
+                                android:gravity="left"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/txn_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/operator_id"
+                            android:layout_toRightOf="@+id/operatorImage"
+                            android:visibility="visible">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txnLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="left"
+                                android:text="@string/transaction_id"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@+id/txnLabel"
+                                android:gravity="left"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/balanceLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txn_id"
+                            android:layout_toRightOf="@+id/operatorImage"
+                            android:visibility="visible">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/balanceLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="left"
+                                android:text="@string/balance"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/balance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@+id/balanceLabel"
+                                android:gravity="left"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txn_id"
+                            android:layout_toRightOf="@+id/operatorImage"
+                            android:visibility="visible">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="left"
+                                android:text="@string/balance"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/balanceLayout"
+                            android:layout_marginTop="20dp"
+                            android:visibility="visible">
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/actionButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorPrimary"
+                                android:text="@string/repeat"
+                                android:textColor="@color/white"
+                                android:visibility="gone" />
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/disputeButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:background="@color/red"
+                                android:text="@string/complain"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:visibility="visible" />
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/printButton"
+                                android:layout_width="50dp"
+                                android:layout_height="36dp"
+                                android:layout_alignParentLeft="true"
+                                android:src="@drawable/printer"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:visibility="visible" />
+
+                            <RelativeLayout
+                                android:id="@+id/disputeTextContainer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignTop="@+id/disputeButton"
+                                android:layout_alignBottom="@+id/disputeButton"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/actionButton"
+                                android:gravity="center_vertical"
+                                android:visibility="gone">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/disputeLabel"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_toLeftOf="@+id/disputeText"
+                                    android:gravity="right"
+                                    android:text="@string/refund_status"
+
+                                    android:textColor="@color/grey_600"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold"
+                                    android:visibility="gone" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/disputeText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginLeft="10dp"
+                                    android:gravity="right"
+                                    android:text=""
+
+                                    android:textColor="@color/grey_600"
+                                    android:textSize="14sp"
+                                    android:visibility="gone" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
+

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "660757256769",
+    "project_id": "bababansi",
+    "storage_bucket": "bababansi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:660757256769:android:e586a910b8e2ac161104c0",
+        "android_client_info": {
+          "package_name": "com.bababansiwalanew"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "660757256769-ca2lhjhf5vumeblmmcqobh4a0kn9nqmi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtL_Eq116oun9aWlnSOmSLLRQNmNOtz3I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "660757256769-ca2lhjhf5vumeblmmcqobh4a0kn9nqmi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

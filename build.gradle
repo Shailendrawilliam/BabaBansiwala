@@ -1,0 +1,73 @@
+
+buildscript {
+    ext.kotlin_version = "1.5.20"
+    dependencies {
+        classpath 'com.google.gms:google-services:4.3.15'
+    }
+
+}
+plugins {
+
+    id 'com.android.application' version '8.5.2' apply false
+    id 'org.jetbrains.kotlin.android' version '1.8.0' apply false
+    id 'com.google.gms.google-services' version "4.4.0" apply false
+}
+dependencies {
+}
+
+
+allprojects {
+    repositories {
+        // google()
+//        maven {
+//            url "https://phonepe.mycloudrepo.io/public/repositories/phonepe-intentsdk-snapshots"
+//        }
+    }
+
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}/*
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.0.1'
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.2'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
+        classpath 'com.google.gms:google-services:4.3.4'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        maven {
+            url "https://jitpack.io"
+        }
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
+        maven {
+            url "https://artifactory.paytm.in/libs-release-local"
+        }
+    }
+
+
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+*/

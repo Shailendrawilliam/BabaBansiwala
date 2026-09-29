@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_5sdp" app:cardElevation="@dimen/_5sdp"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp">
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:background="@color/white"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:id="@+id/talktimelayout"
+        android:layout_width="wrap_content" android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:id="@+id/talktimeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Talktime :"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/talktime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/talktimeLabel"
+            android:text="7.7"
+            android:textColor="@color/grey_600"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/validitylayout"
+        android:layout_width="wrap_content" android:padding="@dimen/_8sdp"
+        android:background="@drawable/edit_text"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/talktimelayout"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:id="@+id/validityLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PlanName :"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/validity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/validityLabel"
+            android:text=" tt "
+            android:textColor="@color/color_blue"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/button_bg"
+
+        android:text="100"
+        android:textColor="@color/white"
+
+        android:textStyle="bold" />
+
+
+    <RelativeLayout
+        android:id="@+id/descriptionLayout"
+        android:layout_marginTop="@dimen/_8sdp" android:padding="@dimen/_8sdp"
+        android:layout_width="match_parent" android:background="@drawable/edit_text"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/validitylayout">
+
+        <TextView
+            android:id="@+id/descriptionLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description :"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/descriptionLabel"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:singleLine="false"
+            android:text=" jgj"
+            android:textColor="@color/green"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

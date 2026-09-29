@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_below="@+id/app_bar_layout">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36.00dp"
+            android:layout_marginRight="36.00dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/walletTypeView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36.00dp"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Body2"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:text="Wallet Type :"
+                    android:textColor="@color/colorPrimary" />
+
+                <RelativeLayout
+                    android:id="@+id/walletView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.80dp"
+                    android:background="@drawable/rect"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="5.00dp"
+                    android:paddingBottom="5dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/walletTv"
+                        style="@style/TextAppearance.AppCompat.Body2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10.80dp"
+                        android:layout_toLeftOf="@+id/rightView"
+                        android:text="Prepaid Wallet" />
+
+                    <LinearLayout
+                        android:id="@+id/rightView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/walletAmountTv"
+                            style="@style/TextAppearance.AppCompat.Body2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_toLeftOf="@+id/arrowIv"
+                            android:text="\u20B9 0" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/arrowIv"
+                            android:layout_width="39.60dp"
+                            android:layout_height="39.60dp"
+                            android:layout_marginLeft="10.80dp"
+                            android:layout_gravity="center_vertical"
+                            app:srcCompat="@drawable/ic_arrow_drop_down"
+                            app:tint="@color/colorPrimary" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/wallettype"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:weightSum="2">
+
+                <RadioGroup
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" >
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:text="Prepaid"
+                        android:id="@+id/rbPrepaid"
+                        android:checked="true"
+                        android:layout_weight=".5"
+                        android:layout_height="match_parent"/>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:text="Utility"
+                        android:id="@+id/rbUtility"
+                        android:layout_weight=".5"
+                        android:layout_height="match_parent"/>
+                </RadioGroup>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/amountView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36.00dp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Body2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Amount :"
+                    android:textColor="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/amountEt"
+                    style="@style/TextAppearance.AppCompat.Body2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:drawablePadding="11dp"
+                    android:ellipsize="end"
+                    android:hint="Enter Amount"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="15dp"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+<Button   style="@style/TextAppearance.AppCompat.Body2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Pay " android:id="@+id/pay"
+    android:textColor="@color/colorPrimary"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36.00dp"
+                android:layout_marginBottom="18dp"
+                android:nestedScrollingEnabled="false" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    xmlns:app="http://schemas.android.com/tools"
+    android:background="@color/white"
+    app:ignore="NamespaceTypo">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/ivback"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_30sdp"
+
+            android:text="Sender Authentication"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/basicView"
+        android:padding="@dimen/_10sdp"
+        android:visibility="visible"
+        android:layout_marginTop="?actionBarSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/maintitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aadhar Number"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/aadharTextLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/maintitle"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp">
+
+            <EditText
+                android:id="@+id/aadhar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text"
+                android:padding="@dimen/_10sdp"
+                android:hint="Please Enter your Aadhar Number"
+                android:inputType="number"
+                android:maxLength="12"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/deviceTypeTextLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aadharTextLayout"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/editbox_background"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:hint="@string/mantra"
+                 android:maxLength="12"
+                android:padding="@dimen/_10sdp"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:id="@+id/consent"
+            android:textSize="10sp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_below="@+id/deviceTypeTextLayout"
+            android:text="I hear by declare my consent agreement for fetching my fingerprint information via  Bababanshiwala"
+            android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/okButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/consent"
+            android:backgroundTint="@color/green"
+
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/dialog_ok" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/consent"
+            android:backgroundTint="@color/red"
+
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/cancel_menu_label" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="@dimen/_10sdp"
+        android:visibility="gone"
+        android:layout_marginTop="?actionBarSize"
+        android:id="@+id/bioMetricView"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:text="Fingerprint Capture"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Animated Fingerprint Image -->
+        <ImageView
+            android:id="@+id/fingerprintImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/title"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/fingerprint_scan" />
+
+        <!-- Capture Percentage -->
+        <TextView
+            android:id="@+id/capturePercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fingerprintImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="0%"
+            android:textSize="18sp" />
+
+        <!-- Circular Progress Bar -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:visibility="visible"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/custom_progress_bar" />
+
+        <!-- Status Message -->
+        <TextView
+            android:id="@+id/statusMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/capturePercentage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Place your finger on the scanner"
+            android:textSize="16sp" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/captureButton"
+            android:layout_width="wrap_content"
+            android:backgroundTint="@color/green"
+
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/statusMessage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Capture" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/submitDataButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:backgroundTint="@color/green"
+
+            android:layout_below="@+id/statusMessage"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:text="submit" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/red"
+            android:layout_below="@+id/statusMessage"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            android:text="Close" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:visibility="gone"
+        android:layout_marginTop="?actionBarSize"
+        android:id="@+id/otpRelativeLayout"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/otptitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/otp_verify"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/otptitle"
+            android:layout_marginTop="10dp"
+            android:text="@string/otp_warn"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/otpTextLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/message"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="@string/otp"
+                android:inputType="number"
+                android:maxLength="6"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/verifyOtp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green"
+
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/otpTextLayout"
+            android:layout_marginTop="20dp"
+            android:text="Verify OTP" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cancelOTPVerification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/red"
+
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/otpTextLayout"
+            android:layout_marginTop="20dp"
+            android:text="@string/cancel_menu_label" />
+    </RelativeLayout>
+</RelativeLayout>

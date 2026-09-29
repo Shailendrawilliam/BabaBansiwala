@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+     android:background="@drawable/bg"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/filterSearchContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="visible">
+        <LinearLayout
+            android:id="@+id/wallettype"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="2">
+
+            <RadioGroup
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:textColor="@color/black"
+                android:textSize="16sp" >
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:text="Prepaid"
+                    android:id="@+id/rbPrepaid"
+                    android:checked="true"
+                    android:layout_weight=".5"
+                    android:layout_height="match_parent"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:text="Utility"
+                    android:id="@+id/rbUtility"
+                    android:layout_weight=".5"
+                    android:layout_height="match_parent"/>
+            </RadioGroup>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/filterFromDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/ic_calendar_icon"
+                android:focusable="false"
+                android:hint="From date"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/filterToDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/ic_calendar_icon"
+                android:focusable="false"
+                android:hint="To date"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+     >
+
+            <EditText
+                android:id="@+id/filterAccountNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/searchDone"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/ic_currency_icon"
+                android:ellipsize="end"
+                android:focusable="true"
+                android:hint=" Name" android:visibility="invisible"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/searchDone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/filterAccountNumber"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/filterAccountNumber"
+                android:background="@color/colorPrimary"
+                android:padding="10dp"
+                android:text="Apply filter"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/filterSearchContainer"
+        android:layout_marginTop="5dp"
+        android:scrollbars="vertical" />
+
+    <TextView
+        android:id="@+id/noData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="20dp"
+        android:text="@string/no_data"
+        android:textColor="@color/grey_600"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

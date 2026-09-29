@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#D83430</color>
+    <color name="colorPrimaryDark">#D83430</color>
+    <color name="colorAccent">#D83430</color>
+    <color name="purple_200">#D83430</color>
+    <color name="AccentColor">#D83430</color>
+    <color name="PrimaryColor">#D83430</color>
+    <color name="PrimaryDarkColor">#D83430</color>
+    <color name="purple_500">#D83430</color>
+    <color name="purple_700">#D83430</color>
+    <color name="teal_200">#D83430</color>
+    <color name="teal_700">#D83430</color>
+    <color name="iconColor">#D83430</color>
+    <color name="splashColor">#D83430</color>
+    <color name="buttoncolor">#D83430</color>
+    <color name="button_color">#D83430</color>
+    <color name="green">#19661C</color>
+    <color name="red">#FF0000</color>
+    <color name="grey">#665f5f</color>
+    <color name="greycon">#383636</color>
+    <color name="light_grey">#EEE8F0</color>
+
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="colorlink">#0645AD</color>
+    <color name="yellow">#ffff00</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="MatishBlack">#333333</color>
+    <color name="orange">#fca120</color>
+     <color name="oranges">#ff4c01</color>
+    <color name="pink">#E91E63</color>
+    <color name="black_trans">#99000000</color>
+    <color name="devider_color">#cebcbc</color>
+    <color name="hint_color">#84000000</color>
+    <color name="grey_600">#F5555555</color>
+    <color name="shadow">#44000000</color>
+    <color name="grey_200">#EEEEEE</color>
+    <color name="aboutpagecolour">#DDDDFA</color>
+
+
+    <color name="pressed">#9E570F</color>
+    <color name="reddishBrown">#B93221</color>
+    <color name="gre">#2a692d</color>
+    <color name="color_delete">#ff5722</color>
+    <color name="color_mark">#1B6EA5</color>
+    <color name="color_red">#DB1D0F</color>
+    <color name="color_pink">#D534A7</color>
+    <color name="color_purple">#8615B6</color>
+    <color name="color_deep_purple">#581CC2</color>
+    <color name="color_indigo">#2A46DF</color>
+    <color name="color_blue">#2090C4</color>
+    <color name="color_light_blue">#03a9f4</color>
+    <color name="color_cyan">#00bcd4</color>
+    <color name="color_teal">#009688</color>
+    <color name="color_green">#4caf50</color>
+    <color name="darkGreen">#4CAF50</color>
+    <color name="lightDarkGreen">#4caf50</color>
+    <color name="color_light_green">#8bc34a</color>
+    <color name="color_lime">#cddc39</color>
+    <color name="color_yellow">#EED604</color>
+    <color name="color_amber">#ffc107</color>
+    <color name="color_orange">#FA5803</color>
+    <color name="color_deep_orange">#ff5722</color>
+    <color name="light_orange">#ff5722</color>
+    <color name="color_brown">#795548</color>
+    <color name="dark_pink">#E41155</color>
+    <color name="dark_blue">#6A00FF</color>
+    <color name="blue">#6A00FF</color>
+</resources>

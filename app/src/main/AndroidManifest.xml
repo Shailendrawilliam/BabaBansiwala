@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.bababansiwalanew">
+
+
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+      <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-permission android:name="android.permission.READ_PRECISE_PHONE_STATE" tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" tools:ignore="ProtectedPermissions" />
+     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.hardware.usb.host" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.USB_PERMISSION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="false"
+        android:allowClearUserData="true"
+        android:configChanges="orientation"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup,android:icon">
+        <activity
+            android:name="com.shopping.OrderHistory"
+            android:exported="false" />
+        <activity
+            android:name="com.shopping.CartListActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.bababansiwalanew.Activities.ProductDetails"
+            android:exported="false" />
+        <activity
+            android:name="com.bababansiwalanew.Activities.ProductList"
+            android:exported="false" />
+        <activity
+            android:name="com.bababansiwalanew.Activities.SubCategory"
+            android:exported="false" />
+        <activity
+            android:name="com.bababansiwalanew.DMR.ui.BioMetricActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="false" />
+        <activity
+            android:name="com.bababansiwalanew.ecomerrce.ShoppingActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.bababansiwalanew.KhataBook.ui.KhataBookActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.bababansiwalanew.KhataBook.ui.KhataBookCustomerDetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.bababansiwalanew.DMR.ui.AddBeneficiaryScreen"
+            android:exported="false" />
+        <activity android:name="com.bababansiwalanew.Dashboard.ui.UserstocknotActivity"  android:exported="false" />
+        <activity android:name="com.bababansiwalanew.Activities.ViewNoticeActivity" android:exported="false"  />
+        <activity android:name="com.bababansiwalanew.Activities.NoticeBoardActivity" android:exported="false" />
+        <activity
+            android:name="com.bababansiwalanew.Login.ui.SignupScreen"
+            android:windowSoftInputMode="adjustNothing" android:exported="false"  />
+        <activity android:name="com.bababansiwalanew.Dashboard.ui.DownlineUserActivity"  android:exported="false" />
+        <activity android:name="com.bababansiwalanew.Dashboard.ui.DownlineUserByRoleActivity" android:exported="false" />
+        <activity android:name="com.bababansiwalanew.Dashboard.ui.UserRoleActivity" android:exported="false"  />
+        <activity android:name="com.bababansiwalanew.UserListActivity"  android:exported="false" />
+        <activity android:name="com.bababansiwalanew.Activities.OfferSheetActivity" android:exported="false"  />
+        <activity android:name="com.bababansiwalanew.Activities.UserSaleReportDetailDateWise" android:exported="false"  />
+        <activity
+            android:name="com.bababansiwalanew.DMR.ui.DMRActivity" android:exported="false"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name="com.bababansiwalanew.Activities.PaymentRequest" android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.bababansiwalanew.Activities.RechargeActivity" android:exported="false"  />
+        <activity android:name="com.bababansiwalanew.Dashboard.ui.ViewActivity"  android:exported="false" />
+        <activity android:name="com.bababansiwalanew.GiftCardServices.ui.GiftCardForm"  android:exported="false" />
+        <activity android:name="com.bababansiwalanew.Dashboard.ui.GiftCardServicesActivity"  android:exported="false" />
+        <activity android:name="com.bababansiwalanew.Dashboard.ui.OutletRegistrationActivity" android:exported="false"  />
+        <activity android:exported="true"
+            android:name="com.bababansiwalanew.SplashScreen.ui.SplashScreen"
+            android:label="@string/app_name"
+   >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.bababansiwalanew.Util.ui.ListScreen" android:exported="false"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.bababansiwalanew.ROffer.ui.ROffer" android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/AppPopUpTheme" />
+        <activity
+            android:name="com.bababansiwalanew.Util.ui.PinPasswordMatcher"
+            android:label="@string/app_name" android:exported="false"
+            android:theme="@style/AppPopUpTheme" />
+        <activity
+            android:name="com.bababansiwalanew.DMR.ui.MoneyTransfer"
+            android:label="@string/app_name" android:exported="false"
+            android:theme="@style/AppPopUpTheme" />
+        <activity
+            android:name="com.bababansiwalanew.Util.ui.BankListScreen"
+            android:label="@string/app_name" android:exported="false"
+            android:theme="@style/AppPopUpTheme" />
+        <activity
+            android:name="com.bababansiwalanew.Util.ui.BankDetailList"
+            android:label="@string/app_name" android:exported="false"
+            android:theme="@style/AppPopUpTheme" />
+        <activity
+            android:name="com.bababansiwalanew.Login.ui.LoginScreen"
+            android:label="@string/app_name" android:exported="false"
+    />
+        <activity
+            android:name="com.bababansiwalanew.BrowsePlan.ui.SelectPlanOption"
+            android:label="@string/app_name" android:exported="false"
+            android:theme="@style/AppPopUpTheme" />
+        <activity
+            android:name="com.bababansiwalanew.BrowsePlan.ui.BrowsePlanScreen"
+            android:label="@string/app_name" android:exported="false"
+    />
+        <activity
+            android:name="com.bababansiwalanew.Util.DthConsumerInfoScreen"
+            android:label="@string/app_name" android:exported="false"
+    />
+        <activity
+            android:name="com.bababansiwalanew.Dashboard.ui.DisMemberList"
+            android:label="@string/app_name" android:exported="false"
+   
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.bababansiwalanew.LedgerReport.ui.LedgerReport"
+            android:label="@string/app_name" android:exported="false"
+    />
+        <activity
+            android:name="com.bababansiwalanew.DMR.ui.FaceDetectionActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.bababansiwalanew.DMRReport.ui.DMRReportScreen"
+            android:label="@string/app_name" android:exported="false"
+    />
+        <activity
+            android:name="com.bababansiwalanew.DthBook.ui.DthBookingActivity"
+            android:label="@string/app_name" android:exported="false"
+    />
+        <activity
+            android:name="com.bababansiwalanew.DTHReversal.ui.TicketDetail"
+            android:label="@string/app_name" android:exported="false"
+    />
+        <activity
+            android:name="com.bababansiwalanew.DisputeReport.ui.DisputeReport"
+            android:label="@string/app_name" android:exported="false"
+    />
+        <activity
+            android:name="com.bababansiwalanew.DTHReversal.ui.GenerateTicket"
+            android:label="@string/app_name" android:exported="false"
+    />
+        <activity
+            android:name="com.bababansiwalanew.DTHReversal.ui.DTHReversalOpenTickets"
+            android:label="@string/app_name" android:exported="false"
+    />
+        <activity
+            android:name="com.bababansiwalanew.CommissionSlab.ui.CommissionScreen"
+            android:label="@string/app_name" android:exported="false"
+    />
+        <activity
+            android:name="com.bababansiwalanew.FundRecReport.ui.FundRecReport"
+            android:label="@string/app_name" android:exported="false"
+    />
+        <activity
+            android:name="com.bababansiwalanew.FundTransferStat.FundTransferStatement"
+            android:label="@string/app_name" android:exported="false"
+    />
+        <activity
+            android:name="com.bababansiwalanew.UserDayBook.ui.UserDayBookScreen"
+            android:label="@string/app_name" android:exported="false"
+    />
+        <activity
+            android:name="com.bababansiwalanew.RechargeReport.ui.RechargeReport"
+            android:label="@string/app_name" android:exported="false"
+    />
+        <activity
+            android:name="com.bababansiwalanew.DMR.ui.BeneficiaryListScreen"
+            android:label="@string/app_name" android:exported="false"
+    />
+        <activity
+            android:name="com.bababansiwalanew.AddMoney.AddMoneyActivity"
+            android:label="@string/app_name" android:exported="false"
+    />
+        <activity
+            android:name="com.bababansiwalanew.Dashboard.ui.Dashboard3"
+            android:label="@string/app_name" android:exported="false"
+   
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name="com.bababansiwalanew.Register.ui.RegisterScreen"
+            android:label="@string/app_name" android:exported="false"
+    />
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_live_0ImY1iPcwt5Mgd" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/logo" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <service android:name="com.bababansiwalanew.Notification.service.MyFirebaseMessagingService" android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.bababansiwalanew.Notification.service.MyFirebaseInstanceIDService" android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.bababansiwalanew.NotificationReceiver"
+            android:directBootAware="true"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.bababansiwalanew.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <service
+            android:name="com.anfu.pos.library.bluetooth4.BluetoothLeService"
+            android:enabled="true" />
+        <service
+            android:name="com.bababansiwalanew.MyFirebaseMessageService" android:exported="false"
+            android:directBootAware="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

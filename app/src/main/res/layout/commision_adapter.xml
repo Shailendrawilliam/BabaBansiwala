@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0px">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+
+
+
+                android:elevation="6dp"
+                card_view:cardCornerRadius="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/_8sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/operatorLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txn"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:gravity="left" android:visibility="gone"
+                        android:text="@string/operator_title"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/operator"
+                        android:layout_weight=".9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/operatorLabel"
+                        android:gravity="left"
+
+                        android:text=" Op"
+                        android:textColor="@color/black"
+                         />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/recCommissionLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                     android:visibility="gone"
+                        android:layout_marginTop="10dp"
+                        android:gravity="left"
+                        android:text="@string/rec_comm"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/recCommission"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+  android:layout_weight=".1"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/operator"
+                        android:gravity="left"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:text="2.00"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey_600"/>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

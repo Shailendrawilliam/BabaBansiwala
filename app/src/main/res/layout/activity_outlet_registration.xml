@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+        <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="12sp"
+            >
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:gravity="center"
+                    android:layout_marginBottom="10sp"
+                    android:textSize="17sp"
+                    android:text="@string/otp_message_sent"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="true" android:visibility="gone"
+                    app:passwordToggleTint="@color/buttoncolor"
+                    android:layout_marginTop="7sp"
+                    android:layout_marginLeft="9sp"
+                    android:layout_marginRight="8sp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/outlet_name"
+                        android:id="@+id/FName"
+                        android:textSize="15sp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/buttoncolor"
+                    android:layout_marginTop="7sp"
+                    android:layout_marginLeft="9sp"
+                    android:layout_marginRight="8sp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/name"
+                        android:inputType="textPersonName"
+                        android:id="@+id/LName"
+                        android:textSize="15sp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="true" android:visibility="gone"
+                    app:passwordToggleTint="@color/buttoncolor"
+                    android:layout_marginTop="7sp"
+                    android:layout_marginLeft="9sp"
+                    android:layout_marginRight="8sp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50sp"
+                        android:hint="@string/dob"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:id="@+id/DOB"
+                        android:textSize="15sp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/buttoncolor"
+                    android:layout_marginTop="7sp"
+                    android:layout_marginLeft="9sp"
+                    android:layout_marginRight="8sp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="50sp"
+                        android:hint="@string/email_hint" android:inputType="textEmailAddress"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:id="@+id/email"
+                        android:textSize="15sp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/buttoncolor"
+                    android:layout_marginTop="7sp"
+                    android:layout_marginLeft="9sp"
+                    android:layout_marginRight="8sp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/sender_mobile"
+                        android:id="@+id/sendermobile"
+                        android:editable="false"
+                        android:textSize="15sp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/buttoncolor"
+                    android:layout_marginTop="7sp"
+                    android:layout_marginLeft="9sp"
+                    android:layout_marginRight="8sp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/pincode_hint" android:inputType="number" android:maxLength="6"
+                        android:id="@+id/Pincode"
+                        android:textSize="15sp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/buttoncolor"
+                    android:layout_marginTop="7sp"
+                    android:layout_marginLeft="9sp"
+                    android:layout_marginRight="8sp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/enter_add_hint"
+                        android:id="@+id/Address"
+                        android:textSize="15sp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="true" android:visibility="gone"
+                    app:passwordToggleTint="@color/buttoncolor"
+                    android:layout_marginTop="7sp"
+                    android:layout_marginLeft="9sp"
+                    android:layout_marginRight="8sp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/area_hint"
+                        android:id="@+id/Area"
+                        android:textSize="15sp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/buttoncolor"
+                    android:layout_marginTop="7sp"
+                    android:layout_marginLeft="9sp"
+                    android:layout_marginRight="8sp">
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/pan_hint"
+                        android:id="@+id/Pan"
+                        android:textSize="15sp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="true" android:visibility="gone"
+                    app:passwordToggleTint="@color/buttoncolor"
+                    android:layout_marginTop="7sp"
+                    android:layout_marginLeft="9sp"
+                    android:layout_marginRight="8sp">
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/aadhar_hint"
+                        android:id="@+id/Aadhar"
+                        android:textSize="15sp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     app:passwordToggleEnabled="true" android:visibility="gone"
+                    app:passwordToggleTint="@color/buttoncolor"
+                    android:layout_marginTop="7sp"
+                    android:layout_marginLeft="9sp"
+                    android:layout_marginRight="8sp">
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/adhar_link"
+                        android:id="@+id/Panlink"
+                        android:textSize="15sp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="true" android:visibility="gone"
+                    app:passwordToggleTint="@color/buttoncolor"
+                    android:layout_marginTop="7sp"
+                    android:layout_marginLeft="9sp"
+                    android:layout_marginRight="8sp">
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/adhar_link"
+                        android:id="@+id/Aadharlink"
+                        android:textSize="18sp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_marginBottom="12sp">
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:hint="@string/otp"
+                        android:id="@+id/OTP"
+                        android:textSize="15sp"
+                        android:layout_weight="1"/>
+
+                    <Button
+                        android:text="@string/get_otp"
+                        android:id="@+id/getotp"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/white"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+
+                <Button
+                    android:text="@string/submit"
+                    android:id="@+id/Submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/white"
+                    android:visibility="visible"/>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</LinearLayout>

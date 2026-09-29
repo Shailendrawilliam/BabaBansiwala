@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_5sdp" app:cardElevation="@dimen/_1sdp"
+    android:layout_margin="@dimen/_10sdp"
+    android:layout_height="wrap_content">
+<RelativeLayout
+    android:layout_width="wrap_content" android:padding="@dimen/_5sdp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:autoSizeTextType="none"
+        android:id="@+id/text" android:layout_margin="@dimen/_5sdp"
+        android:textAlignment="textStart" android:textColor="@color/blue"
+        android:text="Hi thi i your notice !!"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="wrap_content"  android:id="@+id/date"
+        android:text="created on" android:layout_below="@+id/text"
+ android:layout_alignParentEnd="true" android:layout_marginRight="@dimen/_20sdp"
+        android:layout_alignParentRight="true"
+        android:layout_height="@dimen/_20sdp"/>
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

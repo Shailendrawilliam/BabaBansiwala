@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mobileNumberLayout">
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="serif"
+            android:layout_marginRight="20dp"
+            android:inputType="textPassword"
+            android:gravity="left"
+            android:hint="@string/password_hint"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>
+
+<Button
+    android:id="@+id/btnPaymentSubmit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/submit"
+    android:layout_alignParentBottom="true"
+    android:fontFamily="serif"
+    android:layout_marginTop="20dp"
+    android:textColor="@color/white"
+    android:textStyle="bold"
+    android:textAllCaps="false"
+    android:textSize="20dp"
+    android:background="@color/colorPrimary"/>
+
+</RelativeLayout>

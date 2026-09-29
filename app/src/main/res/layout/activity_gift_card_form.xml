@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar" />
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="12sp"
+                >
+            <RelativeLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/senderd"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:textSize="23dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="@string/sender_detaiils"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                android:layout_width="match_parent"
+                    android:id="@+id/l1" android:orientation="vertical"
+                    android:layout_below="@+id/senderd"
+                android:layout_height="wrap_content" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2sp"
+                        android:background="@color/black"/>
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:passwordToggleEnabled="true"
+                        android:visibility="visible"
+                        app:passwordToggleTint="@color/buttoncolor"
+                        android:layout_marginTop="7sp"
+                        android:layout_marginLeft="9sp"
+                        android:layout_marginRight="8sp">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/sender_name"
+                            android:inputType="textPersonName"
+                            android:id="@+id/SenderName"
+                            android:textSize="15sp"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2sp"
+                        android:background="@color/black"/>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:passwordToggleEnabled="true"
+                        app:passwordToggleTint="@color/buttoncolor"
+                        android:layout_marginTop="7sp"
+                        android:layout_marginLeft="9sp"
+                        android:layout_marginRight="8sp">
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/sender_email"
+                            android:inputType="textEmailAddress"
+                            android:id="@+id/Sender_Email"
+                            android:textSize="15sp"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2sp"
+                        android:background="@color/black"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:passwordToggleEnabled="true"
+                        android:visibility="visible"
+                        app:passwordToggleTint="@color/buttoncolor"
+                        android:layout_marginTop="7sp"
+                        android:layout_marginLeft="9sp"
+                        android:layout_marginRight="8sp">
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/enter_mobile_hint"
+                            android:id="@+id/Mob_no"
+                            android:inputType="phone"
+                            android:textSize="15sp"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2sp"
+                        android:background="@color/black"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:passwordToggleEnabled="true"
+                        android:visibility="visible"
+                        app:passwordToggleTint="@color/buttoncolor"
+                        android:layout_marginTop="7sp"
+                        android:layout_marginLeft="9sp"
+                        android:layout_marginRight="8sp">
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/enter_add_hint"
+                            android:inputType="textPostalAddress"
+                            android:id="@+id/Address"
+                            android:textSize="15sp"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2sp"
+                        android:background="@color/black"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:passwordToggleEnabled="true"
+                        android:visibility="visible"
+                        app:passwordToggleTint="@color/buttoncolor"
+                        android:layout_marginTop="7sp"
+                        android:layout_marginLeft="9sp"
+                        android:layout_marginRight="8sp">
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/pincode_hint" android:inputType="numberDecimal"
+                            android:id="@+id/Pincode"
+                            android:textSize="18sp"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2sp"
+                        android:background="@color/black"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:passwordToggleEnabled="true"
+                        android:visibility="visible"
+                        app:passwordToggleTint="@color/buttoncolor"
+                        android:layout_marginTop="7sp"
+                        android:layout_marginLeft="9sp"
+                        android:layout_marginRight="8sp">
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/amount_hint" android:inputType="number"
+                            android:id="@+id/amount"
+                            android:textSize="15sp"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2sp"
+                        android:background="@color/black"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:passwordToggleEnabled="true"
+                        android:visibility="visible"
+                        app:passwordToggleTint="@color/buttoncolor"
+                        android:layout_marginTop="7sp"
+                        android:layout_marginLeft="9sp"
+                        android:layout_marginRight="8sp">
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/city_hint" android:inputType="text"
+                            android:id="@+id/city"
+                            android:textSize="15sp"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2sp"
+                        android:background="@color/black"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:passwordToggleEnabled="true"
+                        android:visibility="visible"
+                        app:passwordToggleTint="@color/buttoncolor"
+                        android:layout_marginTop="7sp"
+                        android:layout_marginLeft="9sp"
+                        android:layout_marginRight="8sp">
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/state_hint" android:inputType="text"
+                            android:id="@+id/state"
+                            android:textSize="18sp"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="@string/reciever_details"
+                    android:id="@+id/t2" android:layout_marginTop="10dp"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:textSize="23dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_height="wrap_content" />
+                      <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2sp"
+                        android:background="@color/black"/>
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:passwordToggleEnabled="true"
+                        android:visibility="visible"
+                        app:passwordToggleTint="@color/buttoncolor"
+                        android:layout_marginTop="7sp"
+                        android:layout_marginLeft="9sp"
+                        android:layout_marginRight="8sp">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/reciever_name"
+                            android:inputType="textPersonName"
+                            android:id="@+id/ReceiverName"
+                            android:textSize="15sp"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2sp"
+                        android:background="@color/black"/>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:passwordToggleEnabled="true"
+                        app:passwordToggleTint="@color/buttoncolor"
+                        android:layout_marginTop="7sp"
+                        android:layout_marginLeft="9sp"
+                        android:layout_marginRight="8sp">
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textEmailAddress"
+                            android:hint="@string/reciever_email"
+                            android:id="@+id/Receiver_Email"
+                            android:textSize="15sp"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2sp"
+                        android:background="@color/black"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:passwordToggleEnabled="true"
+                        android:visibility="visible"
+                        app:passwordToggleTint="@color/buttoncolor"
+                        android:layout_marginTop="7sp"
+                        android:layout_marginLeft="9sp"
+                        android:layout_marginRight="8sp">
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="phone"
+                            android:hint="@string/reciever_mobile"
+                            android:id="@+id/ReceiverMob_no"
+                            android:textSize="15sp"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2sp"
+                        android:background="@color/black"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:passwordToggleEnabled="true"
+                        android:visibility="visible"
+                        app:passwordToggleTint="@color/buttoncolor"
+                        android:layout_marginTop="7sp"
+                        android:layout_marginLeft="9sp"
+                        android:layout_marginRight="8sp">
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                           android:inputType="textPostalAddress"
+                            android:hint="@string/reciever_add"
+                            android:id="@+id/ReceiverAddress"
+                            android:textSize="15sp"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2sp"
+                        android:background="@color/black"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:passwordToggleEnabled="true"
+                        android:visibility="visible"
+                        app:passwordToggleTint="@color/buttoncolor"
+                        android:layout_marginTop="7sp"
+                        android:layout_marginLeft="9sp"
+                        android:layout_marginRight="8sp">
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/pincode_hint"
+                            android:id="@+id/ReceiverPincode"
+                         android:inputType="numberDecimal"
+                            android:textSize="18sp"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2sp"
+                        android:background="@color/black"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:passwordToggleEnabled="true"
+                        android:visibility="visible"
+                        app:passwordToggleTint="@color/buttoncolor"
+                        android:layout_marginTop="7sp"
+                        android:layout_marginLeft="9sp"
+                        android:layout_marginRight="8sp">
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/city_hint"
+                          android:inputType="text"   android:id="@+id/Receivercity"
+                            android:textSize="15sp"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2sp"
+                        android:background="@color/black"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:passwordToggleEnabled="true"
+                        android:visibility="visible"
+                        app:passwordToggleTint="@color/buttoncolor"
+                        android:layout_marginTop="7sp"
+                        android:layout_marginLeft="9sp"
+                        android:layout_marginRight="8sp">
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/state_hint"
+                            android:id="@+id/Receiverstate"
+                            android:textSize="18sp"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="@string/gift_card_message"
+                        android:id="@+id/t3" android:layout_marginTop="10dp"
+                        android:fontFamily="serif"
+                        android:textStyle="bold"
+                        android:textSize="23dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_height="wrap_content" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2sp"
+                        android:background="@color/black"/>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:passwordToggleEnabled="true"
+                        android:visibility="visible"
+                        app:passwordToggleTint="@color/buttoncolor"
+                        android:layout_marginTop="7sp"
+                        android:layout_marginLeft="9sp"
+                        android:layout_marginRight="8sp">
+
+
+                        <EditText
+                            android:inputType=""
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/gift_card_message"
+                            android:id="@+id/gv_gift_msg"
+                            android:textSize="15sp"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+                  <Button
+                        android:text="@string/submit"
+                        android:id="@+id/Submit"
+                      android:layout_below="@+id/l1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:textColor="@color/white"
+                        android:visibility="visible"/>
+
+
+
+                </RelativeLayout>
+            </ScrollView>
+        </LinearLayout>
+
+
+    </LinearLayout>

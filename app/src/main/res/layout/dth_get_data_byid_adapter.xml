@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <RelativeLayout
+            android:id="@+id/mainContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0px">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="5dp"
+                android:elevation="6dp"
+                card_view:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/statusLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Status :"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/statusLabel"
+                        android:gravity="left"
+                        android:text="100"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/balanceLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="left"
+                        android:text="Amount :"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/balance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/balanceLabel"
+                        android:gravity="left"
+                        android:text="000"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+
+                    ///////////////////////////////////////////////////////////////////////////////
+
+                    <RelativeLayout
+                        android:id="@+id/secondContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/status"
+                        android:layout_marginTop="10dp">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/modeLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/amount"
+                            android:gravity="left"
+                            android:text="Mode :"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/mode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/modeLabel"
+                            android:layout_toLeftOf="@+id/amount"
+                            android:gravity="left"
+                            android:text="Panel"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/rightIdLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:gravity="left"
+                            android:text="Right Id :"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/rightId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/rightIdLabel"
+                            android:gravity="left"
+                            android:text="SDE0054625"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+                    ///////////////////////////////////////////////////////////////////////////////
+
+                    <RelativeLayout
+                        android:id="@+id/createdDateContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/secondContainer"
+                        android:layout_marginTop="10dp">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/createdDateLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="Date Time : "
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/createdDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/message"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/createdDateLabel"
+                            android:gravity="left"
+                            android:text="120 aug 2017 27:22:3930"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/tidContainer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/createdDateContainer"
+                        android:layout_marginTop="10dp">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tidLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="TID : "
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/message"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/tidLabel"
+                            android:gravity="left"
+                            android:text="12457896523"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/dthNumberContainer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tidContainer"
+                        android:layout_marginTop="10dp">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/dthNumberLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="DTH Number : "
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/dthNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/message"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/dthNumberLabel"
+                            android:gravity="left"
+                            android:text="sdsdsdsdsds"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/operatorNameContainer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/dthNumberContainer"
+                        android:layout_marginTop="10dp">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/operatorNameLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="Operator Name : "
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/operatorName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/message"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/operatorNameLabel"
+                            android:ellipsize="end"
+                            android:gravity="left"
+                            android:singleLine="true"
+                            android:text="sdsdsdsdsdsds"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/remark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/submit"
+                        android:layout_alignTop="@+id/submit"
+                        android:layout_below="@+id/operatorNameContainer"
+                        android:layout_marginTop="10dp"
+                        android:layout_toLeftOf="@+id/submit"
+                        android:hint="Remark"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/submit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/operatorNameContainer"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="Submit"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/approve"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/submit"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/green"
+                        android:padding="10dp"
+                        android:text="Approve"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/reject"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/submit"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/red"
+                        android:padding="10dp"
+                        android:text="Reject"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
